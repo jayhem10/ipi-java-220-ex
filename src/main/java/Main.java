@@ -6,8 +6,16 @@ public class Main {
             String nom;
             System.out.println("Hello World");
 
-Employe employe = new Employe();
-Employe employe1 = new Employe("John", "Doe", "M4528", LocalDate.now(), 2000d);
+    Employe employe = new Employe();
+    Employe employe1 = new Employe("John", "Doe", "M4528", LocalDate.now(), 2000d);
+    Employe employe2 = new Employe("John", "Doe", "M4528", LocalDate.now(), 2000d);
+        System.out.println(employe1.toString());
+        System.out.println(employe1.equals(employe2));
+        System.out.println(employe1.hashCode());
+        System.out.println(employe2.hashCode());
+        System.out.println(employe2.augmenterSalaire());
+
+
 
         }
     }
