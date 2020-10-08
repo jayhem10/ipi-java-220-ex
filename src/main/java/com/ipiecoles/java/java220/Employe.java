@@ -36,9 +36,19 @@ public class Employe {
         return Entreprise.NB_CONGES_BASE;
     }
 
-    public double augmenterSalaire(Double augmentation){
-        salaire = (getSalaire() * augmentation) + getSalaire();
-        return salaire;
+    public Double getPrimeAnnuelle(){
+        return getPrimeAnnuelle();
+    }
+
+    /**
+     *Augmente le salaire du pourcentage renseigné :
+     * Ex : Salaire à 1000, pourcentage = 0.05 => SALAIRE À 1050
+     *
+     * @param pourcentage est un double strictement positif et inférieur à 1
+     *
+     */
+    public void augmenterSalaire(Double pourcentage){
+        this.salaire = this.salaire * (1 + pourcentage);
     }
 
 

@@ -1,3 +1,4 @@
+import com.ipiecoles.java.java220.Commercial;
 import com.ipiecoles.java.java220.Employe;
 import org.joda.time.LocalDate;
 
@@ -13,7 +14,9 @@ public class Main {
         System.out.println(employe1.equals(employe2));
         System.out.println(employe1.hashCode());
         System.out.println(employe2.hashCode());
-        System.out.println(employe1.augmenterSalaire(0.25));
+
+        Commercial commercial = new Commercial("John", "Doe", "M4528", LocalDate.now(), 1680d, 550d);
+        System.out.println(commercial.getPrimeAnnuelle());
 
 
 
