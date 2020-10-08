@@ -14,7 +14,6 @@ public class Employe {
     private String matricule;
     private LocalDate dateEmbauche;
     private Double salaire;
-    private Double augmentation = 0.25;
 
     public Employe(){
 
@@ -37,18 +36,10 @@ public class Employe {
         return Entreprise.NB_CONGES_BASE;
     }
 
-    public double augmenterSalaire(){
-        Double newSalaire = getSalaire() * augmentation +getSalaire();
-        return newSalaire ;
+    public double augmenterSalaire(Double augmentation){
+        salaire = (getSalaire() * augmentation) + getSalaire();
+        return salaire;
     }
-
-
-
-
-
-
-
-
 
 
 
